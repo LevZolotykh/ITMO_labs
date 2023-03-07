@@ -1,0 +1,11 @@
+def multiply(string):
+    key = []
+    res = ''
+    for i in range(len(string)):
+        key.append(ord(string[i]))
+    for j in range(len(key)):
+        res += str(round(len(string) * ((key[j] * 0.668) % 1)))
+    print(res)
+
+
+multiply("hello")
